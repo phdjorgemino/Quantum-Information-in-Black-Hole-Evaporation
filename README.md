@@ -414,37 +414,7 @@ The recorded random seeds are:
 | [`data/results_summary.csv`](data/results_summary.csv) | Principal point estimates and 95% BCa intervals. |
 | [`data/statistics_metadata.json`](data/statistics_metadata.json) | Bootstrap protocol and statistical reporting conventions. |
 
-### Figures and manuscript
 
-| Path | Contents |
-|---|---|
-| [`figures/`](figures/) | Four production figures in vector PDF and 600-dpi PNG formats. |
-| [`main_REV10_SciPost_BibTeX.tex`](main_REV10_SciPost_BibTeX.tex) | Main manuscript using the SciPost class. |
-| [`references.bib`](references.bib) | Canonical BibTeX database containing all 103 references. |
-| [`SciPost.cls`](SciPost.cls) | SciPost document class included for reproducible compilation. |
-| [`SciPost_bibstyle.bst`](SciPost_bibstyle.bst) | Official SciPost BibTeX style. |
-| [`build/main_REV10_SciPost_BibTeX.pdf`](build/main_REV10_SciPost_BibTeX.pdf) | Verified manuscript compilation. |
-| [`MANIFEST.sha256`](MANIFEST.sha256) | SHA-256 integrity manifest for the production archive. |
-
----
-
-## Bibliographic integrity
-
-The bibliography is maintained exclusively in `references.bib`.
-
-- All 103 citation keys are defined exactly once.
-- 101 entries contain an explicit DOI field.
-- The two sources without an assigned DOI retain an editorial URL and an explanatory note.
-- No bibliography is embedded directly in the LaTeX manuscript.
-- The main manuscript loads the database through:
-
-```latex
-\bibliography{references.bib}
-```
-
-- `SciPost.cls` applies `SciPost_bibstyle.bst`.
-
----
 
 ## Data and code availability
 
