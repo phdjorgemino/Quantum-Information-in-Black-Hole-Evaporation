@@ -222,12 +222,6 @@ Compiling the manuscript additionally requires a LaTeX distribution providing:
 
 ### 1. Clone the repository
 
-```bash
-git clone https://github.com/<USERNAME>/<REPOSITORY>.git
-cd <REPOSITORY>
-```
-
-Replace `<USERNAME>` and `<REPOSITORY>` with the final GitHub location.
 
 ### 2. Create the Python environment
 
