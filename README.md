@@ -16,5 +16,5 @@ guish correlation transfer from decoder-specific heralded recovery through misma
 unitary and dephasing controls. These results support species-dependent semiclassical
 transport but neither establish cryptographic hardness nor provide a microscopic encod-
 ing mechanism for infalling states. Information conservation therefore remains condi-
-tional on the assumed isometry and is not derived for realistic four-dimensional evapo-
+tional on the assumed isometry and is not derived for realistic four-dimensional evapo
 ration
