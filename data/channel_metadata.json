@@ -1,0 +1,24 @@
+{
+  "scope": "17-qubit reference-tagged event-conditioned correlation-transfer toy model; not a microscopic evaporation model",
+  "ensemble_size": 128,
+  "master_seed": 20260720,
+  "bit_generator": "PCG64 via numpy.random.default_rng",
+  "sampling_model": "frequency nodes are mid-quantiles of the number spectrum already transmitted to future null infinity",
+  "greybody_factor_usage": "Gamma is used by greybody.py in the sampling density only; it is not reapplied by this channel",
+  "double_count_guard_passed": true,
+  "port_convention_guard_passed": true,
+  "brick_depth": 8,
+  "identity_control_is_deterministic": true,
+  "proxy_caveat": "a unit-transmissivity swap is conditioned on an emitted event at infinity and is not a microscopic source-to-radiation map",
+  "python": "3.12.13",
+  "numpy": "2.3.5",
+  "max_norm_error": {
+    "haar_infinity": 8.881784197001252e-16,
+    "brick_infinity": 4.107825191113079e-15,
+    "identity_infinity": 2.220446049250313e-16
+  },
+  "sha256": {
+    "channel_ensemble.npz": "47f9a378ba91ebbbbe91d78cce030f51d758415525b8073233019c6d22f0fce4",
+    "channel_ensemble_long.csv": "7f7ed013b8f07bf1812427befce6c5c7ae992cf8c8532a1c7e1bd93a13731ddc"
+  }
+}

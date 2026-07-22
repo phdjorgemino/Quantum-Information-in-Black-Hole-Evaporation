@@ -1,0 +1,12 @@
+{
+  "pointwise_interval": "95% bias-corrected and accelerated (BCa) bootstrap",
+  "curve_contrast_band": "95% bootstrap max absolute deviation of resampled mean from observed mean",
+  "resamples": 20000,
+  "rng_seed": 20260722,
+  "p_values": "none; no confirmatory null test was preregistered before these production seeds",
+  "greybody_sampling": "at-infinity spectrum; Gamma is not reapplied as channel attenuation",
+  "python": "3.12.13",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "matplotlib": "3.10.8"
+}

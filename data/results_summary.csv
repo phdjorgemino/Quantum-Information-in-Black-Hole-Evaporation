@@ -1,0 +1,7 @@
+estimand,point,mean,ci_low,ci_high,interval,paired_contrast,n
+A_op(brickwork)-A_op(Haar),t=4,-0.20106809369181805,-0.2101068951689867,-0.19236716470472093,95% BCa bootstrap of ensemble mean,True,128
+"I(Q:R)/(2 ln 2), Haar at infinity",t=4,0.4997563077981315,0.49750860323960117,0.5020017545938479,95% BCa bootstrap of ensemble mean,False,128
+F_cond matched,d=4,0.9885989516614,0.9884513376621533,0.988749425478437,95% BCa bootstrap of ensemble mean,False,256
+P_success matched,d=7,0.2499999999999994,0.2499999999999994,0.2499999999999994,95% BCa bootstrap of ensemble mean,False,256
+F_cond(matched)-F_cond(mismatched),d=4,0.7396088596648535,0.7362039731109653,0.7429568256620507,95% BCa bootstrap of ensemble mean,True,256
+F_cond(matched)-F_cond(dephased),d=4,0.011494123940142181,0.011350807573917203,0.011641991427138548,95% BCa bootstrap of ensemble mean,True,256

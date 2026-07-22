@@ -1,0 +1,18 @@
+{
+  "scope": "finite Haar decoder benchmark with exact statevectors, a complete single-output phase-damping control, and no deterministic decoder",
+  "ensemble_size": 256,
+  "master_seed": 20260721,
+  "bit_generator": "PCG64 via numpy.random.default_rng",
+  "pairing": "matched, mismatched, and dephased protocols share U in each realization; mismatch uses independent V",
+  "dephasing_control": "complete phase damping on output A after U, evaluated as the exact equal mixture of I and Z branches",
+  "fidelity_convention": "Bell-state overlap of normalized RR' state conditional on successful Phi+ projections",
+  "success_probability_convention": "exact Born probability, not finite-shot frequency",
+  "weighted_yield_caveat": "P_success*F_cond is not an unconditional deterministic-decoder fidelity",
+  "matched_weighted_yield_identity_max_error": 8.604228440844963e-16,
+  "python": "3.12.13",
+  "numpy": "2.3.5",
+  "sha256": {
+    "yy_ensemble.npz": "b49e0d03342d6ae58be5bafa7107de6dfc79375c95969f72ae5328a3b1b2b3b0",
+    "yy_ensemble_long.csv": "4b4d022f1ebf09e4fc912a1c3ebba3bb96bf50c79379a7627fbfaef0c99c91fd"
+  }
+}

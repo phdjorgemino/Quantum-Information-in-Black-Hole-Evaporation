@@ -1,0 +1,408 @@
+{
+  "scope": "inclusive over declared Schwarzschild angular modes; one truncation sentinel per field",
+  "epistemic_scope": "field-resolved kinematics only; no microscopic information coupling is inferred",
+  "units": "G=c=hbar=k_B=1 and 2M=1",
+  "python": "3.12.13",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "fields": [
+    {
+      "slug": "scalar",
+      "label": "real scalar $s=0$",
+      "spin": 0.0,
+      "statistics": "bose",
+      "physical_dof": 1,
+      "page_multiplicity": 1
+    },
+    {
+      "slug": "weyl",
+      "label": "Weyl $s=1/2$",
+      "spin": 0.5,
+      "statistics": "fermi",
+      "physical_dof": 1,
+      "page_multiplicity": 4
+    },
+    {
+      "slug": "photon",
+      "label": "photon $s=1$",
+      "spin": 1.0,
+      "statistics": "bose",
+      "physical_dof": 2,
+      "page_multiplicity": 1
+    },
+    {
+      "slug": "graviton",
+      "label": "graviton $s=2$",
+      "spin": 2.0,
+      "statistics": "bose",
+      "physical_dof": 2,
+      "page_multiplicity": 1
+    }
+  ],
+  "modes": [
+    {
+      "species": "scalar",
+      "mode_slug": "l0",
+      "mode_label": "$\\ell=0$",
+      "angular_value": 0.0,
+      "degeneracy": 1,
+      "included": true,
+      "low_frequency_power": 2,
+      "reused_lowest_mode": "scalar"
+    },
+    {
+      "species": "scalar",
+      "mode_slug": "l1",
+      "mode_label": "$\\ell=1$",
+      "angular_value": 1.0,
+      "degeneracy": 3,
+      "included": true,
+      "low_frequency_power": 4,
+      "reused_lowest_mode": null
+    },
+    {
+      "species": "scalar",
+      "mode_slug": "l2",
+      "mode_label": "$\\ell=2$",
+      "angular_value": 2.0,
+      "degeneracy": 5,
+      "included": true,
+      "low_frequency_power": 6,
+      "reused_lowest_mode": null
+    },
+    {
+      "species": "scalar",
+      "mode_slug": "l3",
+      "mode_label": "$\\ell=3$",
+      "angular_value": 3.0,
+      "degeneracy": 7,
+      "included": false,
+      "low_frequency_power": 8,
+      "reused_lowest_mode": null
+    },
+    {
+      "species": "weyl",
+      "mode_slug": "k1",
+      "mode_label": "$j=1-1/2$",
+      "angular_value": 0.5,
+      "degeneracy": 2,
+      "included": true,
+      "low_frequency_power": 2,
+      "reused_lowest_mode": "dirac"
+    },
+    {
+      "species": "weyl",
+      "mode_slug": "k2",
+      "mode_label": "$j=2-1/2$",
+      "angular_value": 1.5,
+      "degeneracy": 4,
+      "included": true,
+      "low_frequency_power": 4,
+      "reused_lowest_mode": null
+    },
+    {
+      "species": "weyl",
+      "mode_slug": "k3",
+      "mode_label": "$j=3-1/2$",
+      "angular_value": 2.5,
+      "degeneracy": 6,
+      "included": true,
+      "low_frequency_power": 6,
+      "reused_lowest_mode": null
+    },
+    {
+      "species": "weyl",
+      "mode_slug": "k4",
+      "mode_label": "$j=4-1/2$",
+      "angular_value": 3.5,
+      "degeneracy": 8,
+      "included": false,
+      "low_frequency_power": 8,
+      "reused_lowest_mode": null
+    },
+    {
+      "species": "photon",
+      "mode_slug": "l1",
+      "mode_label": "$\\ell=1$",
+      "angular_value": 1.0,
+      "degeneracy": 6,
+      "included": true,
+      "low_frequency_power": 4,
+      "reused_lowest_mode": "gauge"
+    },
+    {
+      "species": "photon",
+      "mode_slug": "l2",
+      "mode_label": "$\\ell=2$",
+      "angular_value": 2.0,
+      "degeneracy": 10,
+      "included": true,
+      "low_frequency_power": 6,
+      "reused_lowest_mode": null
+    },
+    {
+      "species": "photon",
+      "mode_slug": "l3",
+      "mode_label": "$\\ell=3$",
+      "angular_value": 3.0,
+      "degeneracy": 14,
+      "included": true,
+      "low_frequency_power": 8,
+      "reused_lowest_mode": null
+    },
+    {
+      "species": "photon",
+      "mode_slug": "l4",
+      "mode_label": "$\\ell=4$",
+      "angular_value": 4.0,
+      "degeneracy": 18,
+      "included": false,
+      "low_frequency_power": 10,
+      "reused_lowest_mode": null
+    },
+    {
+      "species": "graviton",
+      "mode_slug": "l2",
+      "mode_label": "$\\ell=2$",
+      "angular_value": 2.0,
+      "degeneracy": 10,
+      "included": true,
+      "low_frequency_power": 6,
+      "reused_lowest_mode": "graviton"
+    },
+    {
+      "species": "graviton",
+      "mode_slug": "l3",
+      "mode_label": "$\\ell=3$",
+      "angular_value": 3.0,
+      "degeneracy": 14,
+      "included": true,
+      "low_frequency_power": 8,
+      "reused_lowest_mode": null
+    },
+    {
+      "species": "graviton",
+      "mode_slug": "l4",
+      "mode_label": "$\\ell=4$",
+      "angular_value": 4.0,
+      "degeneracy": 18,
+      "included": false,
+      "low_frequency_power": 10,
+      "reused_lowest_mode": null
+    }
+  ],
+  "primary_estimand": "pairwise Jensen-Shannon divergence of normalized inclusive at-infinity number spectra",
+  "jsd_units": "nats; maximum ln(2)",
+  "jsd_number": [
+    [
+      0.0,
+      0.10077407673026184,
+      0.28026656954364415,
+      0.5326143955801332
+    ],
+    [
+      0.10077407673026184,
+      0.0,
+      0.09053998732574728,
+      0.4239558332808989
+    ],
+    [
+      0.28026656954364415,
+      0.09053998732574728,
+      0.0,
+      0.25619108897499976
+    ],
+    [
+      0.5326143955801332,
+      0.4239558332808989,
+      0.25619108897499976,
+      0.0
+    ]
+  ],
+  "jsd_power": [
+    [
+      0.0,
+      0.06960008289729247,
+      0.21524298383579138,
+      0.47025951680954226
+    ],
+    [
+      0.06960008289729247,
+      0.0,
+      0.07772549354838944,
+      0.3908015749528324
+    ],
+    [
+      0.21524298383579138,
+      0.07772549354838944,
+      0.0,
+      0.24371084762210002
+    ],
+    [
+      0.47025951680954226,
+      0.3908015749528324,
+      0.24371084762210002,
+      0.0
+    ]
+  ],
+  "minimum_pairwise_jsd_number": 0.09053998732574728,
+  "maximum_jsd_boundary_sensitivity": 8.05412117188542e-06,
+  "maximum_jsd_thinned_grid_sensitivity": 0.00024526524168344555,
+  "page_1976_power_validation": {
+    "weyl": {
+      "reconstructed_alpha": 0.0001636851920181125,
+      "reference_alpha": 0.0001636,
+      "relative_error": 0.0005207336070447482
+    },
+    "photon": {
+      "reconstructed_alpha": 3.36420758790313e-05,
+      "reference_alpha": 3.371e-05,
+      "relative_error": -0.002014954641610722
+    },
+    "graviton": {
+      "reconstructed_alpha": 3.836136318978924e-06,
+      "reference_alpha": 3.84e-06,
+      "relative_error": -0.0010061669325718272
+    }
+  },
+  "greybody_factor_usage": "Gamma enters each modal at-infinity spectrum once; no subsequent channel attenuation is applied",
+  "field_summaries": {
+    "scalar": {
+      "number_rate": 0.0013296515618778147,
+      "power": 0.0002975126888388964,
+      "mean_number_frequency": 0.22375237044713497,
+      "number_peak_frequency": 0.17228951809488094,
+      "power_peak_frequency": 0.23281267579223702,
+      "quantiles": [
+        0.1,
+        0.25,
+        0.5,
+        0.75,
+        0.9
+      ],
+      "number_quantiles": [
+        0.07805769270131258,
+        0.13019987508688347,
+        0.20228734281279967,
+        0.28910284235327144,
+        0.3919096466788578
+      ],
+      "power_quantiles": [
+        0.13351760891024264,
+        0.1925914554192902,
+        0.2719049853612025,
+        0.3771960208598126,
+        0.5151199320105132
+      ],
+      "sentinel_number_fraction": 8.135811053071104e-06,
+      "sentinel_power_fraction": 4.407683888676027e-05,
+      "finite_mode_number_tail_bound_fraction": 1.5889354878080248e-07,
+      "finite_mode_power_tail_bound_fraction": 1.192720436288817e-06,
+      "included_degeneracy_sum": 9
+    },
+    "weyl": {
+      "number_rate": 0.00048577940700740026,
+      "power": 0.0001636851920181125,
+      "mean_number_frequency": 0.3369537482588655,
+      "number_peak_frequency": 0.3172867054190887,
+      "power_peak_frequency": 0.3582317644852803,
+      "quantiles": [
+        0.1,
+        0.25,
+        0.5,
+        0.75,
+        0.9
+      ],
+      "number_quantiles": [
+        0.1716947632725411,
+        0.24310132597779854,
+        0.32667169464016527,
+        0.41437389114049095,
+        0.5070456138205215
+      ],
+      "power_quantiles": [
+        0.22513240005315655,
+        0.2946150665519055,
+        0.37589428508161893,
+        0.4684875006099695,
+        0.5784890597423427
+      ],
+      "sentinel_number_fraction": 2.271887943035076e-06,
+      "sentinel_power_fraction": 9.131099522520714e-06,
+      "finite_mode_number_tail_bound_fraction": 5.7988750246463e-07,
+      "finite_mode_power_tail_bound_fraction": 2.8905034895204763e-06,
+      "included_degeneracy_sum": 12
+    },
+    "photon": {
+      "number_rate": 0.000295974888294065,
+      "power": 0.0001345683035161252,
+      "mean_number_frequency": 0.45466121903701934,
+      "number_peak_frequency": 0.4551284455278455,
+      "power_peak_frequency": 0.48384961560097506,
+      "quantiles": [
+        0.1,
+        0.25,
+        0.5,
+        0.75,
+        0.9
+      ],
+      "number_quantiles": [
+        0.2772887502052863,
+        0.3609506353320442,
+        0.45071921062583536,
+        0.5389820336187744,
+        0.628417172501901
+      ],
+      "power_quantiles": [
+        0.3268342147842578,
+        0.40479185165589654,
+        0.4893768648517427,
+        0.5790446922701344,
+        0.6787624862274134
+      ],
+      "sentinel_number_fraction": 5.829997473148986e-07,
+      "sentinel_power_fraction": 1.815793494814131e-06,
+      "finite_mode_number_tail_bound_fraction": 2.3794029343326475e-06,
+      "finite_mode_power_tail_bound_fraction": 8.789822832508404e-06,
+      "included_degeneracy_sum": 30
+    },
+    "graviton": {
+      "number_rate": 2.218094733251416e-05,
+      "power": 1.5344545275915695e-05,
+      "mean_number_frequency": 0.6917894464057783,
+      "number_peak_frequency": 0.7066622913932121,
+      "power_peak_frequency": 0.7273335833489594,
+      "quantiles": [
+        0.1,
+        0.25,
+        0.5,
+        0.75,
+        0.9
+      ],
+      "number_quantiles": [
+        0.4999649217830723,
+        0.5982098354153781,
+        0.6949395509093629,
+        0.7842714056340964,
+        0.8715612684101292
+      ],
+      "power_quantiles": [
+        0.5420806076271922,
+        0.6323249628225743,
+        0.7225901217874681,
+        0.8113203826002288,
+        0.9040903569916487
+      ],
+      "sentinel_number_fraction": 2.9954849169117257e-05,
+      "sentinel_power_fraction": 6.084044868409042e-05,
+      "finite_mode_number_tail_bound_fraction": 2.5399943731469164e-05,
+      "finite_mode_power_tail_bound_fraction": 6.166785788742755e-05,
+      "included_degeneracy_sum": 24
+    }
+  },
+  "sha256": {
+    "h3_inclusive_modes.csv": "978805a482efc7afd916fc50e5a6fd10993579bd5bd3bdc3853a52c18c7a83e7",
+    "h3_species_summary.csv": "1a58ea847254fa58156837c8a4e877a91fa13013e315bd7e9c30cc7972c57a96",
+    "h3_inclusive.npz": "3f545ebe967f4cd8ab0b0b22d20ddde5955e2314a9af890fb0e0088209c9b883"
+  }
+}
